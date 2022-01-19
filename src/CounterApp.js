@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const CounterApp = ({value = 10}) => {
 
-    const [counter, setCounter] = useState( 1 );
+    const [counter, setCounter] = useState( value );
 
     const handleAdd = () => {
         setCounter(counter + 1);
