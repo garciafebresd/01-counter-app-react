@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const CounterApp = ({value = 10}) => {
+export const CounterApp = ({value = 10}) => {
 
     const [counter, setCounter] = useState( 1 );
 
     const handleAdd = () => {
         setCounter(counter + 1);
-        // setCounter( (c) => c + 1 );
     }
 
     const handleSustract = () => setCounter(counter - 1);
